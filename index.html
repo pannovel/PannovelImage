@@ -237,7 +237,7 @@
 
             try {
                 const baseUrl = window.location.href.replace(/\/+$/, '');
-                const response = await fetch('https://api.github.com/repos/pannovel/PannovelImage/contents/images');
+                const response = await fetch('https://api.github.com/repos/pannovel/PannovelImage/contents');
                 const files = await response.json();
 
                 allImages = files
